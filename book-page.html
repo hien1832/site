@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Booking Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div class="container">
+            <!-- Navigatin Bar -->
+            <div class="navbar">
+                <h1 class="logo"><a href="index.html">D-Show</a></h1>
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="index.html#info-title" class="items-on-menu" id="details">Details</a></li>
+                        <li><a href="#footer" class="items-on-menu" id="about">About us</a></li>
+                        <li><a href="book-page.html" class="items-on-menu" ><button id="book-now">Book Now!</button></a></li>
+                    </ul>
+                </nav>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="dash"></div>
+                    <div class="dash"></div>
+                    <div class="dash"></div>
+                </div>
+            </div>
+            <main>
+                <!-- Body Area -->
+            <div class="introduction-book-page">
+                <p>Welcome to the booking of D-Show. Fill your information in the form to get the tickets!</p>
+            </div>
+            <div class="form-container">
+                <div class="note">
+                    <h1>NOTE</h1>
+                    <p>Before filling in the form, please transfer the ticket fee to momo: 0336042014. 
+                    Save your bill and attach it with the form.</p>
+                </div>
+                <form class="book-form" action="#">
+                    <table>
+                        <tr>
+                            <td class="col-left">Full Name</td>
+                            <td class="col-right"><input type="text" id="full-name" name="full-name" placeholder="Your full name"></td>
+                        </tr>
+                        <tr>
+                            <td class="col-left">Phone Number</td>
+                            <td class="col-right"><input type="number" id="phone-number" name="phone-number"placeholder="Your phone number"></td>
+                        </tr>
+                        <tr>
+                            <td class="col-left">Email</td>
+                            <td class="col-right"><input type="email" id="email" name="email" placeholder="Your email address"></td>
+                        </tr>
+                        <tr>
+                            <td class="col-left">Gender</td>
+                            <td class="col-right">
+                                <input type="radio" name="gender" id="gender_male" value="gender_male"><label for="gender_male">Male</label>
+                                <input type="radio" name="gender" id="gender_female" value="gender_female"><label for="gender_female">Female</label>
+                                <input type="radio" name="gender" id="gender_other" value="gender_other"><Label for="gender_other">Other</Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-left">Ticket Type</td>
+                            <td class="col-right">
+                                <select id="ticket" name="ticket">
+                                    <option>Select Ticket Type</option>
+                                    <option value="normal">Mormal Ticket</option>
+                                    <option value="vip">V.I.P Ticket</option>
+                                    <option value="children">Children Ticket</option>
+                                    <option value="children-vip">Children V.I.P Ticket</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-left">Remarks</td>
+                            <td class="col-right"><textarea id="remarks" name="remarks" placeholder="Remarks"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="col-left"></td>
+                            <td class="col-right"><input type="checkbox" id="term"><label id="lebel-term" for="term">  By checking this, you agree to our Terms and Conditions.</label></td>
+                        </tr>
+                        <tr>
+                            <td class="col-left"></td>
+                            <td class="col-right"><button type="submit">Send the form</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            </main>
+            <!-- Footer Area -->
+            <div class="footer" id="footer">
+                <h2>D-SHOW ENTERTAINMENT</h2>
+                <p>Our features are organizing events of parties of music, wedding, birthday,etc.</p>
+                <p>Our purpose is bringing you, customers, the best services.</p>
+                <h3>Contact Us</h3>
+                <div class="social-link">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/fb.png" class="fb" alt="Facebook Icon"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/ig.png" class="ig" alt="Instagram Icon"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/tw.png" class="tw" alt="Twitter Icon"></a>
+                </div>
+                <hr>
+                <p class="copyright">Copyright © 2021 D-Show Inc. All rights reserved.</p>
+            </div>
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            function toggleMenu() {
+                if (menuList.style.display == "none") {
+                    menuList.style.display = "block";
+                } else {
+                    menuList.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
